@@ -53,7 +53,7 @@ Note that while all the other channels require everything sent through them be e
 First of all, the server must have an RSA key pare of size 2048
 
 1. **Public Key Transfer**
-   The server sends its public key to the client in plain text, using the Privacy-Enhanced Mail (PEM) format.
+   As soon as a client connects, The server sends its public key to the client in plain text, using the Privacy-Enhanced Mail (PEM) format.
 
 2. **Public Key Verification**
    The client verifies the server's public key. This is client-specific. If the client decides that it does not trust the key, it should disconnect immediately.
